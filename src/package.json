@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@iota/iota.js": "^1.8.6"
+  }
+}

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+        php:
+                container_name: "php-nodejs"
+                build: .
+                restart: always
+                ports:
+                        - 8080:8080
+                command: php -S 0.0.0.0:8080
+                volumes:
+                        - .:/var/www
+                hostname: "www"
+                working_dir: "/var/www/src"
+
